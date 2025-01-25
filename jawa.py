@@ -39,9 +39,12 @@ def log_error(message):
 # Banner
 def print_banner():
     print(f"\n{blue}▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰{reset}")
-    print(f"{white}      Discord Auto Leveling      {reset}")
-    print(f"{yellow}         by: Aethereal          {reset}")
+    print(f"{white}      Discord Grinding Auto Leveling      {reset}")
+    print(f"{yellow}         By: StephenAhmeed          {reset}")
+    print(f"{cyan}Join My Airdrop Channel For Upcoming Updates:{reset}")
+    print(f"{cyan}   https://t.me/sabbirofficialairdrop{reset}")
     print(f"{blue}▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰{reset}\n")
+
 
 print_banner()
 
