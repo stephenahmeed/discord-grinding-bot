@@ -39,12 +39,9 @@ def log_error(message):
 # Banner
 def print_banner():
     print(f"\n{blue}▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰{reset}")
-    print(f"{white}      Discord Grinding Auto Leveling      {reset}")
-    print(f"{yellow}         By: StephenAhmeed          {reset}")
-    print(f"{cyan}Join My Airdrop Channel For Upcoming Updates:{reset}")
-    print(f"{cyan}   https://t.me/sabbirofficialairdrop{reset}")
+    print(f"{white}      Discord Auto Leveling      {reset}")
+    print(f"{yellow}         by: Aethereal          {reset}")
     print(f"{blue}▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰{reset}\n")
-
 
 print_banner()
 
@@ -229,9 +226,9 @@ def main():
     
     delete_mode = mode == 1
     
-    channel_id = int(input(f"{magenta}Enter Channel ID: {reset}"))
-    message_count = int(input(f"{magenta}Number of messages to send: {reset}"))
-    message_delay = int(input(f"{magenta}Delay between each message (in seconds): {reset}"))
+    channel_id = int(input(f"{magenta}Masukkan Channel ID: {reset}"))
+    message_count = int(input(f"{magenta}Berapa banyak pesan yang akan dikirim: {reset}"))
+    message_delay = int(input(f"{magenta}Delay antara setiap pesan (dalam detik): {reset}"))
     
     accounts = []
     for token in tokens:
