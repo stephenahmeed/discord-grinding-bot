@@ -1,108 +1,119 @@
-# Discord Auto Chat
+# Discord Grinding Auto Chat
 
-Bot Discord untuk auto-leveling dengan fitur pengiriman pesan otomatis yang mendukung multiple akun.
+A Discord bot for auto-leveling with features for automatic message sending, supporting multiple accounts.
 
-## Fitur
+---
 
-- Support multiple akun (token)
-- Auto delete pesan setelah dikirim
-- Pendeteksian timeout channel
-- Penanganan rate limit dan slowmode
-- Error handling yang lengkap
-- Customizable delay antar pesan
-- 54 variasi pesan random
+## Features
+- Support for multiple accounts (tokens)
+- Auto-deletion of messages after sending
+- Detection of timeout channels
+- Handling of rate limits and slow mode
+- Comprehensive error handling
+- Customizable delay between messages
+- 54 random message variations
 
-## Persyaratan
+---
 
+## Requirements
 - Python 3.7+
-- discord.py 1.7.3
-- asyncio
-- colorama
+- `discord.py` 1.7.3
+- `asyncio`
+- `colorama`
 
-## Instalasi
+---
 
-1. Clone repository ini
-```bash
-git clone https://github.com/Aethereal-Collective/discord-auto-chat.git
-cd discord-auto-chat
-```
+## Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/stephenahmeed/discord-grinding-bot.git
+   cd discord-grinding-bot
+   ```
 
-2. Setup Virtual Environment
-```bash
-# Windows
-python -m venv venv
-venv\Scripts\activate
+2. Set up a virtual environment:
+   - **Windows**:
+     ```bash
+     python -m venv venv
+     venv\Scripts\activate
+     ```
+   - **Linux/Mac**:
+     ```bash
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
 
-# Linux/Mac
-python3 -m venv venv
-source venv/bin/activate
-```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-3. Install dependencies
-```bash
-pip install -r requirements.txt
-```
+---
 
-## Penggunaan
+## Usage
+1. Create a `token.txt` file and add your Discord tokens (one token per line):
+   ```
+   TOKEN1
+   TOKEN2
+   TOKEN3
+   ```
 
-1. Buat file `token.txt` dan masukkan token Discord (satu token per baris)
-```
-TOKEN1
-TOKEN2
-TOKEN3
-```
+2. Run the script:
+   ```bash
+   python jawa.py
+   ```
 
-2. Jalankan script
-```bash
-python jawa.py
-```
+3. Enter the required information when prompted:
+   - Channel ID
+   - Number of messages to send
+   - Delay between messages (in seconds)
 
-3. Masukkan informasi yang diminta:
-- Channel ID
-- Jumlah pesan yang akan dikirim
-- Delay antara setiap pesan (dalam detik)
+---
 
-## Cara Mendapatkan Token Discord
+## How to Obtain a Discord Token
+1. Open Discord in a browser.
+2. Press `F12` to open Developer Tools.
+3. Go to the "Network" tab.
+4. Filter by "api."
+5. Find a request with the `authorization` header.
+6. Copy the token value.
 
-1. Buka Discord di browser
-2. Tekan F12 untuk membuka Developer Tools
-3. Pergi ke tab Network
-4. Ketik "api" di filter
-5. Cari request yang memiliki header "authorization"
-6. Copy nilai token dari sana
+---
 
-## Cara Mendapatkan Channel ID
+## How to Obtain a Channel ID
+1. Enable Developer Mode in Discord (User Settings > App Settings > Advanced > Developer Mode).
+2. Right-click on a channel.
+3. Select "Copy ID."
 
-1. Aktifkan Developer Mode di Discord (User Settings > App Settings > Advanced > Developer Mode)
-2. Klik kanan pada channel
-3. Pilih "Copy ID"
+---
 
-## Peringatan
+## Warnings
+⚠️ **IMPORTANT**:
+- Using self-bots violates Discord's Terms of Service.
+- Use this bot at your own risk.
+- It is recommended to set a minimum delay of 10 seconds between messages.
+- Ensure the tokens you use are valid and fresh.
 
-⚠️ **PENTING**:
-- Penggunaan self-bot melanggar Terms of Service Discord
-- Gunakan dengan risiko sendiri
-- Disarankan menggunakan delay minimal 10 detik antar pesan
-- Pastikan token yang digunakan valid dan fresh
+---
 
 ## Error Handling
-
-Script akan menangani berbagai jenis error:
-- Token tidak valid/expired
-- Channel tidak ditemukan
-- Timeout channel
-- Rate limit
-- Slowmode
-- Tidak ada izin mengirim/menghapus pesan
+The script handles various types of errors:
+- Invalid/expired tokens
+- Channel not found
+- Channel timeout
+- Rate limits
+- Slow mode
+- Missing permissions to send/delete messages
 - Voice channel detection
 
-## Tips Penggunaan
+---
 
-1. Gunakan delay yang aman:
-   - Minimal 10 detik antara pesan
-   - Jangan spam terlalu banyak pesan
+## Usage Tips
+- **Use a safe delay**:
+  - Minimum of 10 seconds between messages.
+  - Avoid spamming too many messages.
+- **If errors occur**:
+  - **Invalid token**: Update the token in `token.txt`.
+  - **Rate limit**: The script will automatically wait.
+  - **Timeout**: Wait for the timeout to finish.
 
-2. Jika terjadi error:
-   - Token tidak valid: Perbarui token di token.txt
-   - Rate limit: Script akan otomatis menunggu
-   - Timeout: Tunggu sampai timeout selesai
+### Join My Airdrop Channel For Upcoming Update: https://t.me/sabbirofficialairdrop
