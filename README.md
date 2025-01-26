@@ -1,4 +1,4 @@
-# Discord Grinding Auto Chat
+# Discord Grinding Bot
 
 A Discord bot for auto-leveling with features for automatic message sending, supporting multiple accounts.
 
